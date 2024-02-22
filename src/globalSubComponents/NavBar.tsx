@@ -83,26 +83,18 @@ const NavBar = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            to="../Contact"
-            className={curTab === "Contact" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
+            to="../OurStory"
+            className={curTab === "OurStory" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
             OUR STORY
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
-            to="../Pricing"
-            className={curTab === "Pricing" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
+            to="../Sustain"
+            className={curTab === "Sustain" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
             SUSTAINABILITY
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link
-            to="../Blog"
-            className={curTab === "Blog" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
-          >
-            WHERE TO BUY
           </Link>
         </NavbarItem>
       </NavbarContent>
