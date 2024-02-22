@@ -34,28 +34,36 @@ const NavBar = () => {
       onMenuOpenChange={() => {
         dispatch(updateNavStatus(!navOpenStatus));
       }}
-      className="h-[5rem] nav z-[200] bg-black"
+      className="h-[7rem] nav z-[200] bg-black"
       maxWidth="xl"
       isBordered
       position="sticky"
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
-        <div className="bg-white hidden lg:block">
+        <div className="bg-white hidden lg:block rounded-xl">
           <Link to="/">
-            <Image width={60} src={icon} alt="logo" radius="none" />
+            <Image width={80} src={icon} alt="logo" radius="none" className="p-3" />
           </Link>
         </div>
       </NavbarContent>
-      <NavbarContent className="lg:hidden logo">
+      <NavbarContent className="lg:hidden logo mr-[30%]" justify="end">
         <Link to="../Home">
-          <div className="bg-white p-[1rem] flex justify-center items-center max-h-[5rem] ribbon">
-            <Image width={60} src={icon} alt="logo" radius="none" />
+          <div className="bg-white flex max-h-[5rem] rounded-xl ribbon ">
+            <Image width={80} src={icon} alt="logo" radius="none" className="p-3" />
           </div>
         </Link>
       </NavbarContent>
 
       <NavbarContent className="hidden lg:flex mt-[2rem]" justify="center">
+        <NavbarItem>
+          <Link
+            to="../Home"
+            className={curTab === "Home" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
+          >
+            HOME
+          </Link>
+        </NavbarItem>
         <NavbarItem>
           <Link
             to="../Recipes"

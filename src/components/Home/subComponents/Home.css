@@ -1,5 +1,7 @@
-/* .video {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-} */
+
+.story {
+  background-image: url("https://img.freepik.com/free-photo/flat-lay-delicious-local-food-assortment-with-copy-space_23-2148833791.jpg?t=st=1708610560~exp=1708614160~hmac=a40b4c69a2bc7cd7d4f3d655d7b132fd9a6af15d8d9add77f093fb54aee9e5d3&w=1060");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

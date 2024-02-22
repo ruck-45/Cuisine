@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+import "./Home.css";
 const OurStory = () => {
   return (
-    <div className="h-[60vh] bg-white justify-center items-center text-black grid grid-cols-2 p-[2rem]">
+    <div className="h-[60vh] bg-white justify-center items-center text-black grid grid-cols-1 md:grid-cols-2 p-[2rem] story">
       <div></div>
       <div className="flex flex-col gap-2">
         <h1 className="text-start font-bold text-3xl">
