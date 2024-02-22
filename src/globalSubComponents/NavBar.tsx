@@ -35,12 +35,19 @@ const NavBar = () => {
         dispatch(updateNavStatus(!navOpenStatus));
       }}
       className="h-[7rem] nav z-[200] bg-black border-white"
+      className="h-[7rem] nav z-[200] bg-black border-white"
       maxWidth="xl"
+      isBordered
+      position="sticky"
       isBordered
       position="sticky"
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
+        <div className="bg-white hidden lg:block rounded-xl">
+          <Link to="/">
+            <Image width={80} src={icon} alt="logo" radius="none" className="p-3" />
+          </Link>
         <div className="bg-white hidden lg:block rounded-xl">
           <Link to="/">
             <Image width={80} src={icon} alt="logo" radius="none" className="p-3" />
