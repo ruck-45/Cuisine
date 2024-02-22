@@ -18,6 +18,8 @@ import ServiceHero from "./globalAssets/Services.jpg";
 import PrivacyHero from "./globalAssets/privacy.jpg";
 import Recipes from "./components/Recipes/Recipes";
 import Products from "./components/Products/Products";
+import Story from "./components/Story/Story";
+import Sustain from "./components/Sustainbiility/Sustain";
 
 function App() {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -74,6 +76,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Recipes" element={<Recipes />} />
           <Route path="/Products" element={<Products />} />
+          <Route path="/OurStory" element={<Story />} />
+          <Route path="/Sustain" element={<Sustain />} />
           <Route path="*" element={<Navigate to="/Home" />} />
         </Routes>
       </div>
