@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Teriyaki Sesame Salmon",
+    "price": 14.99,
+    "description": "Fresh Atlantic salmon marinated in a savory teriyaki sauce and topped with toasted sesame seeds. Oven-baked to perfection.",
+    "image": "https://th.bing.com/th/id/OIG1.L40YIslSWEGUAeI01bVH?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Honey Chipotle Salmon",
+    "price": 15.5,
+    "description": "Salmon glazed with a sweet and smoky honey chipotle sauce. Grilled for a slightly charred flavor.",
+    "image": "https://th.bing.com/th/id/OIG1.epevk9KmKvnwCYxPBr_h?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Lemon Herb Crusted Sea Bass",
+    "price": 17.99,
+    "description": "Sustainable sea bass coated in a zesty lemon and herb crust. Pan-seared for a crispy exterior and flaky interior.",
+    "image": "https://th.bing.com/th/id/OIG3.NqwV35sBcf9AkJ9NSBGK?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Garlic & Herb Tilapia",
+    "price": 12.99,
+    "description": "Mild tilapia seasoned with a blend of garlic, herbs, and spices. Baked for a light and flavorful option.",
+    "image": "https://th.bing.com/th/id/OIG4.EaXpkQqo1J4WV3ro9tay?pid=ImgGn"
+  },
+  {
+    "name": "Cajun Shrimp & Andouille Sausage",
+    "price": 14.5,
+    "description": "Plump shrimp and spicy andouille sausage simmered in a flavorful Cajun sauce. Served over creamy grits.",
+    "image": "https://th.bing.com/th/id/OIG1.AFDPqFmetUURVtTVQcCB?pid=ImgGn"
+  },
+  {
+    "name": "Blackened Mahi Mahi",
+    "price": 16.99,
+    "description": "Mahi mahi seasoned with a blackened spice blend and seared for a bold and delicious flavor.",
+    "image": "https://th.bing.com/th/id/OIG3.SVk7nHOYA8ap.vcc1UOC?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Shrimp Scampi with Linguine",
+    "price": 15.99,
+    "description": "Tender shrimp sauteed in garlic, butter, white wine, and lemon juice. Served over linguine pasta.",
+    "image": "https://th.bing.com/th/id/OIG4.tHvfnCFQjIpOTPc5Js1D?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Pan-Seared Scallops with Risotto",
+    "price": 19.99,
+    "description": "Large, seared scallops served over creamy Parmesan risotto.",
+    "image": "https://th.bing.com/th/id/OIG3.bPOyB9RJItgM9xHtLBIF?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Tuscan White Bean & Tuna Stew",
+    "price": 13.99,
+    "description": "Hearty stew with flaked tuna, white beans, tomatoes, and fresh herbs. Perfect for a comforting meal.",
+    "image": "https://th.bing.com/th/id/OIG2.wTdcorgV_GT4A5US1fHc?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Sesame Seed Ahi Tuna Poke Bowl",
+    "price": 14.99,
+    "description": "Marinated ahi tuna cubes served over sushi rice with various toppings like avocado, seaweed salad, and pickled ginger.",
+    "image": "https://th.bing.com/th/id/OIG4.J99gWKyPGhyNJ1X2c.JV?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "Salmon Nigiri",
+    "price": 12.99,
+    "description": "Slices of fresh salmon nigiri sushi served with pickled ginger and wasabi.",
+    "image": "https://th.bing.com/th/id/OIG3.LU7kUhZXlR44sSd5KLfh?w=1024&h=1024&rs=1&pid=ImgDetMain"
+  },
+  {
+    "name": "California Roll",
+    "price": 10.99,
+    "description": "Classic California roll with imitation crab, avocado, and cucumber inside, and tobiko on top.",
+    "image": "https://th.bing.com/th/id/OIG4.UmLiBBPwLtrZDyeYlS9b?pid=ImgGn"
+  }
+]
