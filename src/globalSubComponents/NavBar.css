@@ -1,5 +1,5 @@
 .active {
-  color: #f5a524;
+  color: white;
   font-weight: 700;
   font-size: large;
 }
@@ -9,23 +9,28 @@
   font-size: large;
 }
 
-.notActive:hover {
-  color: #f5a524;
-}
-
 .nav {
   font-family: "Acme";
 }
 
 .navActive::after {
   content: "";
-  height: 0.25rem;
+  height: 0.15rem;
   border-radius: 1rem;
-  background-color: #f5a524;
-  transform: translateY(1.75rem);
-  filter: drop-shadow(0 -0.3rem 0.4rem #f5a524);
+  background-color: white;
+  transform: translateY(0.2rem);
+  filter: drop-shadow(0 -0.3rem 0.4rem white);
+  animation: drawLine 1s forwards;
 }
 
+@keyframes drawLine {
+  from {
+    width: 0; /* Start with width 0 */
+  }
+  to {
+    width: 100%; /* End with full width */
+  }
+}
 .navActiveServices::after {
   content: "";
   height: 0.25rem;

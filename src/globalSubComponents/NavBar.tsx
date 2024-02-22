@@ -34,15 +34,17 @@ const NavBar = () => {
       onMenuOpenChange={() => {
         dispatch(updateNavStatus(!navOpenStatus));
       }}
-      className="h-[5rem] nav z-[200]"
+      className="h-[5rem] nav z-[200] bg-black"
       maxWidth="xl"
-      shouldHideOnScroll
-      classNames={{ base: "bg-[rgba(0,0,0,0.4)]" }}
+      isBordered
+      position="sticky"
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-white" />
         <div className="bg-white hidden lg:block">
-          <Image width={60} src={icon} alt="logo" radius="none" />
+          <Link to="/">
+            <Image width={60} src={icon} alt="logo" radius="none" />
+          </Link>
         </div>
       </NavbarContent>
       <NavbarContent className="lg:hidden logo">
@@ -53,20 +55,11 @@ const NavBar = () => {
         </Link>
       </NavbarContent>
 
-      <NavbarContent className="hidden lg:flex" justify="center">
-        <NavbarItem>
-          <Link
-            to="../Home"
-            className={curTab === "Home" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
-          >
-            HOME
-          </Link>
-        </NavbarItem>
-
+      <NavbarContent className="hidden lg:flex mt-[2rem]" justify="center">
         <NavbarItem>
           <Link
             to="../Recipes"
-            className={curTab === "Recipes" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Recipes" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
             RECIPES
           </Link>
@@ -75,7 +68,7 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to="../Products"
-            className={curTab === "Products" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Products" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
             PRODUCTS
           </Link>
@@ -83,61 +76,52 @@ const NavBar = () => {
         <NavbarItem>
           <Link
             to="../Contact"
-            className={curTab === "Contact" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Contact" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
-            CONTACT US
+            OUR STORY
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             to="../Pricing"
-            className={curTab === "Pricing" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Pricing" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
-            PRICING
+            SUSTAINABILITY
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link
             to="../Blog"
-            className={curTab === "Blog" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            className={curTab === "Blog" ? "active navActive flex flex-col px-[0.5rem]" : "notActive px-[0.5rem]"}
           >
-            BLOG
+            WHERE TO BUY
           </Link>
         </NavbarItem>
       </NavbarContent>
-      {isLoggedIn ? (
-        <NavbarContent justify="end">
-          <NavbarItem>
-            <UserAvatar />
-          </NavbarItem>
-        </NavbarContent>
-      ) : (
-        <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
-            <ButtonElement
-              to="../Auth"
-              variant="bordered"
-              color="warning"
-              label="Login"
-              radius="full"
-              className="w-full px-[8px] py-[10px]"
-              onClickFunction={() => dispatch(updateToLoginStatus(true))}
-            />
-          </NavbarItem>
-          <NavbarItem>
-            <ButtonElement
-              to="../Auth"
-              variant="solid"
-              color="warning"
-              label="Sign Up"
-              radius="full"
-              className="w-full px-[8px] py-[10px] font-semibold"
-              onClickFunction={() => dispatch(updateToLoginStatus(false))}
-            />
-          </NavbarItem>
-        </NavbarContent>
-      )}
-
+      {/* <NavbarContent justify="end">
+        <NavbarItem className="hidden lg:flex">
+          <ButtonElement
+            to="../Auth"
+            variant="bordered"
+            color="warning"
+            label="Login"
+            radius="full"
+            className="w-full px-[8px] py-[10px]"
+            onClickFunction={() => dispatch(updateToLoginStatus(true))}
+          />
+        </NavbarItem>
+        <NavbarItem>
+          <ButtonElement
+            to="../Auth"
+            variant="solid"
+            color="warning"
+            label="Sign Up"
+            radius="full"
+            className="w-full px-[8px] py-[10px] font-semibold"
+            onClickFunction={() => dispatch(updateToLoginStatus(false))}
+          />
+        </NavbarItem>
+      </NavbarContent> */}
       <NavbarMenu className="mt-[1rem] bg-[rgba(0,0,0,0.4)] z-[200]">
         {menuItems.map((item, index) => {
           return (

@@ -8,6 +8,13 @@ declare module "./src/**/*.png"{
     export default content;
 };
 
+
+declare module "*.mp4" {
+    export const ReactComponent: React.MediaHTMLAttributes<HTMLVideoElement>;
+  const src: string;
+  export default src;
+}
+
 declare module "./src/**/*.svg" {
   import * as React from "react";
 
