@@ -26,7 +26,7 @@ const Products = () => {
         className="py-[5rem] px-[2rem] lg:px-[5rem] xl:px-[10rem] text-white flex flex-col gap-[4rem] bg-no-repeat bg-center bg-cover"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1631477076114-9123f721b9dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+            "url(https://images.unsplash.com/photo-1638864616275-9f0b291a2eb6?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         }}
       >
         <div className="flex flex-col md:flex-row justify-between items-center gap-[1rem] md:gap-0">
