@@ -21,7 +21,7 @@ import { updateToLoginStatus } from "../store/toLoginSlice";
 import ButtonElement from "../globalElements/ButtonElement";
 import UserAvatar from "./UserAvatar";
 import { getCookie } from "../utils/cookies";
-const menuItems = ["Home", "Services", "About", "Contact", "Pricing", "Blog", "Log In"];
+const menuItems = ["Home", "Recipes", "Products", "Contact", "Pricing", "Blog", "Log In"];
 
 const NavBar = () => {
   const isLoggedIn = getCookie("token") ? true : false;
@@ -65,19 +65,19 @@ const NavBar = () => {
 
         <NavbarItem>
           <Link
-            to="../Services"
-            className={curTab === "Services" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            to="../Recipes"
+            className={curTab === "Recipes" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            SERVICES
+            RECIPES
           </Link>
         </NavbarItem>
 
         <NavbarItem>
           <Link
-            to="../About"
-            className={curTab === "About" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
+            to="../Products"
+            className={curTab === "Products" ? "active navActive flex flex-col px-[1rem]" : "notActive px-[1rem]"}
           >
-            ABOUT
+            PRODUCTS
           </Link>
         </NavbarItem>
         <NavbarItem>

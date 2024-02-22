@@ -7,16 +7,7 @@ import NavBar from "./globalSubComponents/NavBar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import Pricing from "./components/Pricing/Pricing";
-import Services from "./components/Services/Services";
-import Auth from "./components/Auth/Auth";
-import Profile from "./components/Profile/Profile";
-import Blog from "./components/Blog/Blog";
-import Privacy from "./components/Privacy/Privacy";
 import Footer from "./globalSubComponents/Footer";
-import FrequentQuestion from "./globalSubComponents/FrequentQuestion";
-import CTA from "./globalSubComponents/CTA";
-import QuickContacts from "./globalSubComponents/QuickContacts";
 import ScrollToTop from "./globalSubComponents/ScrollToTop";
 import { RootState } from "./store/store";
 import HomeHero from "./globalAssets/HomeHero.jpg";
@@ -25,7 +16,8 @@ import ContactHero from "./globalAssets/Contact.jpg";
 import PricingHero from "./globalAssets/Prices.jpg";
 import ServiceHero from "./globalAssets/Services.jpg";
 import PrivacyHero from "./globalAssets/privacy.jpg";
-import PasswordReset from "./components/ForgetPassword/PasswordReset";
+import Recipes from "./components/Recipes/Recipes";
+import Products from "./components/Products/Products";
 
 function App() {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -80,21 +72,12 @@ function App() {
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Pricing" element={<Pricing />} />
-          <Route path="/Auth" element={<Auth />} />
-          <Route path="/Services/*" element={<Services />} />
-          <Route path="/Profile" element={<Profile />} />
-          <Route path="/Blog/*" element={<Blog />} />
-          <Route path="/Privacy" element={<Privacy />} />
-          <Route path="/ResetPassword" element={<PasswordReset />} />
+          <Route path="/Recipes" element={<Recipes />} />
+          <Route path="/Products" element={<Products />} />
           <Route path="*" element={<Navigate to="/Home" />} />
         </Routes>
       </div>
-      {curTab === "Auth" || curTab === "Password Reset" ? null : (
-        <CTA text="❝ We Care for your Brand as Passionately as You Do. ❞" color="warning" showArrow={false} />
-      )}
       {curTab === "Auth" || curTab === "Password Reset" ? null : <Footer />}
-      {curTab === "Auth" || curTab === "Password Reset" ? null : <QuickContacts />}
       {curTab === "Auth" || curTab === "Password Reset" ? null : <ScrollToTop />}
     </>
   );
