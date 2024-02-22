@@ -6,8 +6,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 // Local Files
 import { updateTab } from "../../store/curTabSlice";
 import { scrollTop } from "../../utils/controllers";
-
-const food = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+import fishRecipes from "./assets/data.json";
 
 const Recipes = () => {
   const dispatch = useDispatch();
@@ -69,18 +68,15 @@ const Recipes = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-          {food.map((data, index) => (
-            <div className="border-3 hover:translate-y-[-0.5rem] transition cursor-pointer">
+          {fishRecipes.map((data, index) => (
+            <div key={index} className="border-3 hover:translate-y-[-0.5rem] transition cursor-pointer">
               <div
                 className="bg-no-repeat bg-center bg-cover h-[18rem]"
                 style={{
-                  backgroundImage:
-                    "url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                  backgroundImage: `url("${data.image}")`,
                 }}
               ></div>
-              <p className="p-[3rem] text-center text-[1.5rem] font-bold border-t-1">
-                Citrus Salmon & Curried Butternut Squash Stew
-              </p>
+              <p className="p-[3rem] text-center text-[1.5rem] font-bold border-t-1">{data.name}</p>
             </div>
           ))}
         </div>
