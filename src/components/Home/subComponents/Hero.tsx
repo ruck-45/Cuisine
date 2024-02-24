@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div
       className="flex flex-col
-     justify-center items-center h-[60vh] md:h-[75vh] lg:h-[90vh] bg-black/90 text-white font-bold text-3xl md:text-5xl text-center p-[1rem] top-0 left-0 relative"
+     justify-center items-center h-[60vh] md:h-[75vh] lg:h-[90vh] bg-black/90 text-white font-bold text-2xl md:text-5xl text-center p-[1rem] top-0 left-0 relative"
     >
       <video autoPlay loop muted className="absolute min-h-full min-w-full">
         <source src={vid} type="video/mp4" />
