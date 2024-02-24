@@ -31,7 +31,7 @@ const PerfectMeal = () => {
             />
             <Image
               width={190}
-              src="https://img.freepik.com/free-photo/top-view-baked-potatoes-with-minced-meat-greens-inside-grey-plate-dark-blue-desk_140725-49956.jpg?t=st=1708609961~exp=1708613561~hmac=994ede0b0c2e8478f3f01a758e9814c7288b64f57f16f0fa1f7c3ecb4f78917a&w=996"
+              src="https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?t=st=1708772446~exp=1708776046~hmac=38db2c5814aad72e4230d32b20412de3567d1b76d4e0034b36e7b4823c591f93&w=1060"
               className="relative top-5 left-3"
               radius="none"
             />
@@ -39,7 +39,7 @@ const PerfectMeal = () => {
           <div className="flex flex-row mt-5 md:mt-0">
             <Image
               width={150}
-              src="https://img.freepik.com/free-photo/side-view-rice-garnish-with-fried-onion-carrot-greens-chili-pepper-table_141793-5069.jpg?t=st=1708610012~exp=1708613612~hmac=c62508074940a2ba23997db44518c40faf34f59f1851e1e00cce7bc0f3bfceac&w=996"
+              src="https://img.freepik.com/free-photo/deep-fried-wonton-dark-surface_1150-43553.jpg?t=st=1708772510~exp=1708776110~hmac=c65e7a19fe98c60548721062bf86e2d5ea7585d9df9551d6465d0af32a431ef5&w=996"
               className="relative left-10  bottom-10 md:left-20 md:bottom-20"
               radius="none"
             />
@@ -57,13 +57,13 @@ const PerfectMeal = () => {
           <div className="flex flex-row">
             <Image
               width={260}
-              src="https://img.freepik.com/free-photo/top-view-male-cook-cutting-celery-dark-table-salad-diet-meal-color-photo-food-health_179666-17880.jpg?t=st=1708610120~exp=1708613720~hmac=04e75313354305c00b32cc6875b144065a2406ad7c42e948d8bd1419bd13985c&w=360"
+              src="https://img.freepik.com/free-photo/food-girl-kitchen_144627-5202.jpg?t=st=1708772582~exp=1708776182~hmac=16d28153222777a1bb155be6e8c46a2c48cf0b5aaa1242361e65114b8f215d89&w=360"
               className="relative bottom-10 md:bottom-20"
               radius="none"
             />
             <Image
               width={180}
-              src="https://img.freepik.com/free-photo/healthy-vegetables-wooden-table_1150-38014.jpg?t=st=1708610166~exp=1708613766~hmac=f9d9b5993a5d60cc0601c5eca3af445583732f6c1de2447ff7fe53d49a9d7fd4&w=996"
+              src="https://img.freepik.com/free-photo/arrangement-salad-copy-space-card_23-2148748868.jpg?t=st=1708772638~exp=1708776238~hmac=7f5d3a9172121c0d3aa8c55599890f2832cab9f0e8783bf363232a20f28dc2be&w=740"
               className="relative top-3 left-3"
               radius="none"
             />

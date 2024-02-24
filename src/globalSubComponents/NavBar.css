@@ -20,7 +20,7 @@
   background-color: white;
   transform: translateY(0.2rem);
   filter: drop-shadow(0 -0.3rem 0.4rem white);
-  animation: drawLine 1s forwards;
+  animation: drawLine 0.3s forwards;
 }
 
 @keyframes drawLine {
