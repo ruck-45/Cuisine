@@ -1,20 +1,22 @@
+import React from "react";
 import { Image } from "@nextui-org/react";
 import img from "../assets/city.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-const PerfectMeal = () => {
+const Chef = () => {
   return (
     <div className="flex flex-col p-5 px-[4rem] lg:px-[6rem] bg-black">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10">
         <div className="md:mt-[5rem]">
           <h1 className="text-white text-3xl font-bold mb-5 md:mb-8">
-            Delectable culinary inspirations <br />
+            Our chefs’ inspiration <br />
             await!
           </h1>
           <p className="text-white text-md md:text-lg">
-            From tantalizing rubs to irresistible glazes and crusts, our chefs expertly blend fire, smoke, salt, spice,
-            and herbs to elevate your home-cooked meals to restaurant-quality perfection.
+            Living by the water and tending their own vegetable and herb gardens, our chefs take inspiration from the
+            sea and the land to create mouth-watering dishes you can serve from your own kitchen. By taking on the
+            complicated culinary techniques, we’ve simplified the cooking to save you the time and effort.
           </p>
           <Link to="../Recipes" className="flex items-center gap-2 md:gap-4 hover:gap-6 duration-100 text-white mt-8">
             <p className="font-bold text-lg md:text-xl">SEE ALL RECIPES</p>
@@ -64,7 +66,7 @@ const PerfectMeal = () => {
             <Image
               width={180}
               src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              className="relative top-3 left-3"
+              className="relative bottom-2 left-3"
               radius="none"
             />
           </div>
@@ -85,15 +87,16 @@ const PerfectMeal = () => {
         </div>
         <div className="md:mt-[5rem]">
           <h1 className="text-white text-3xl font-bold mb-5 md:mb-8">
-            Indulge in mouthwatering <br />
-            seafood!
+            Food experiences you <br /> want to share
           </h1>
           <p className="text-white text-md md:text-lg">
-            Crafted with premium ingredients, our array of salmon, tilapia, cod, and crab offerings are bursting with
-            flavor, delivering chef-inspired recipes effortlessly.
+            We believe in creating great food experiences that should be shared. With recipes that are versatile enough
+            to host a backyard barbecue or enjoy a romantic dinner for two, we ensure our seafood will always impress.
+            With the main dish taken care of, you can get confident in the kitchen and dial up the creativity to make
+            the perfect sides that complete your meal!
           </p>
           <Link to="../Products" className="flex items-center gap-2 md:gap-4 hover:gap-6 duration-100 text-white mt-8">
-            <p className="font-bold text-lg md:text-xl">SEE ALL PRODUCTS</p>
+            <p className="font-bold text-lg md:text-xl">CHECK OUT</p>
             <FaArrowRightLong className="w-12 md:w-16 mt-1" />
           </Link>
         </div>
@@ -102,4 +105,4 @@ const PerfectMeal = () => {
   );
 };
 
-export default PerfectMeal;
+export default Chef;
