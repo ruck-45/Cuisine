@@ -6,6 +6,8 @@ import { updateTab } from "../../store/curTabSlice";
 import { scrollTop } from "../../utils/controllers";
 import FeaturedRecepie from "./subComponents/FeaturedRecepie";
 import FeaturedService from "./subComponents/FeaturedService";
+import Unleash from "./subComponents/Unleash";
+import Hero from "./subComponents/Hero";
 
 const Landing = () => {
   const dispatch = useDispatch();
@@ -14,8 +16,10 @@ const Landing = () => {
 
   return (
     <div>
+      <Hero/>
       <FeaturedRecepie />
       <FeaturedService />
+      <Unleash/>
     </div>
   );
 };
