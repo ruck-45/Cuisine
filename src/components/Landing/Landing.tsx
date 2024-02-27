@@ -5,15 +5,17 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import { scrollTop } from "../../utils/controllers";
 import Subscribe from "./subComponents/Subscribe";
+import Thanks from "./subComponents/Thanks";
 
 const Landing = () => {
   const dispatch = useDispatch();
   dispatch(updateTab("Landing"));
   scrollTop();
-  
+
   return (
     <>
-      <Subscribe/>
+      <Subscribe />
+      <Thanks />
     </>
   );
 };
