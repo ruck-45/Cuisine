@@ -20,6 +20,7 @@ import Recipes from "./components/Recipes/Recipes";
 import Products from "./components/Products/Products";
 import Story from "./components/Story/Story";
 import Sustain from "./components/Sustainbiility/Sustain";
+import Landing from "./components/Landing/Landing";
 
 function App() {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -78,6 +79,7 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/OurStory" element={<Story />} />
           <Route path="/Sustain" element={<Sustain />} />
+          <Route path="/landing" element={<Landing />} />
           <Route path="*" element={<Navigate to="/Home" />} />
         </Routes>
       </div>
