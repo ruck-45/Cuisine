@@ -5,12 +5,14 @@ import { configureStore } from "@reduxjs/toolkit";
 import curTabSlice from "./curTabSlice";
 import navOpenStatusSlice from "./navOpenStatusSlice";
 import toLoginSlice from "./toLoginSlice";
+import popoverStatusSlice from "./popoverStatusSlice";
 
 const store = configureStore({
   reducer: {
     curTab: curTabSlice,
     navOpenStatus: navOpenStatusSlice,
     toLogin: toLoginSlice,
+    popoverStatus: popoverStatusSlice,
   },
 });
 

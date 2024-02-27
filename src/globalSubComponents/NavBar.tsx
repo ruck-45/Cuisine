@@ -30,7 +30,7 @@ const NavBar = () => {
       onMenuOpenChange={() => {
         dispatch(updateNavStatus(!navOpenStatus));
       }}
-      className="h-[7rem] nav z-[200] bg-black border-white"
+      className="h-[7rem] nav md:z-[200] bg-black border-white"
       maxWidth="xl"
       isBordered
       position="sticky"

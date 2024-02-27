@@ -10,6 +10,7 @@ import FeaturedRecepie from "./subComponents/FeaturedRecepie";
 import FeaturedService from "./subComponents/FeaturedService";
 import Unleash from "./subComponents/Unleash";
 import Hero from "./subComponents/Hero";
+import Popover from "./subComponents/Popover";
 
 const Landing = () => {
   const dispatch = useDispatch();
@@ -18,6 +19,7 @@ const Landing = () => {
 
   return (
     <div>
+      <Popover />
       <Hero />
       <FeaturedRecepie />
       <FeaturedService />
