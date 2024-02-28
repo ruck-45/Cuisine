@@ -12,11 +12,11 @@ const Robinhood = () => {
   return (
     <>
       <RobinNav />
-      <div className="flex flex-col items-center text-center justify-center p-[5rem] bg-white gap-y-[2rem]">
+      <div className="flex flex-col items-center text-center justify-center p-[1rem] md:p-[5rem] bg-white gap-y-[1rem] md:gap-y-[2rem]">
         <Image src="https://digitalelo.online/wp-content/uploads/2024/02/Robinhood-logo-300x169.png" />
-        <h1 className="font-bold text-5xl">Hello!</h1>
+        <h1 className="font-bold text-4xl md:text-5xl">Hello!</h1>
         <p className="font-bold text-3xl">How Can We Help ?</p>
-        <p className="font-bold text-3xl">Contact Us Today +1(818)666-9841</p>
+        <p className="font-bold text-3xl mt-[3rem] md:mt-0">Contact Us Today +1(818)666-9841</p>
         <div className="flex flex-col lg:flex-row gap-[2rem]">
           <Image
             src="https://digitalelo.online/wp-content/uploads/2024/02/robinhood-1024x583.png"

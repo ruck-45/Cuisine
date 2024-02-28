@@ -1,5 +1,5 @@
 // Dependencies
-import { Navbar, NavbarContent, NavbarItem, Button, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
+import { Navbar, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -29,7 +29,10 @@ const RobinNav = () => {
         isBordered
         shouldHideOnScroll
       >
-        <NavbarContent className="flex " justify="end">
+        <NavbarContent justify="end">
+          <NavbarMenuToggle aria-label={navOpenStatus ? "Close menu" : "Open menu"} className="lg:hidden text-black" />
+        </NavbarContent>
+        <NavbarContent className="hidden lg:flex " justify="end">
           <NavbarItem>
             <Link
               to="/Home"
