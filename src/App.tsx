@@ -72,7 +72,8 @@ function App() {
       <div style={{ backgroundImage: background }} className={className}>
         {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <NavBar />}
         <Routes>
-          <Route path="/" element={<Robinhood />} />
+          {/* <Route path="/" element={<Robinhood />} /> */}
+          <Route path="/" element={<Navigate to="/Home" />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
