@@ -11,9 +11,9 @@ import { useDispatch } from "react-redux";
 import { updateTab } from "../../store/curTabSlice";
 import { scrollTop } from "../../utils/controllers";
 const Sustain = () => {
-     const dispatch = useDispatch();
-     dispatch(updateTab("Sustain"));
-     scrollTop();
+  const dispatch = useDispatch();
+  dispatch(updateTab("Sustain"));
+  scrollTop();
   return (
     <div>
       <Hero/>

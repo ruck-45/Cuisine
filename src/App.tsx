@@ -21,6 +21,7 @@ import Products from "./components/Products/Products";
 import Story from "./components/Story/Story";
 import Sustain from "./components/Sustainbiility/Sustain";
 import Landing from "./components/Landing/Landing";
+import Robinhood from "./components/Robinhood/Robinhood";
 
 function App() {
   const curTab = useSelector((state: RootState) => state.curTab.value);
@@ -69,9 +70,9 @@ function App() {
   return (
     <>
       <div style={{ backgroundImage: background }} className={className}>
-        {curTab === "Auth" || curTab === "Password Reset" ? null : <NavBar />}
+        {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <NavBar />}
         <Routes>
-          <Route path="/" element={<Navigate to="/Home" />} />
+          <Route path="/" element={<Robinhood />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
@@ -83,8 +84,8 @@ function App() {
           <Route path="*" element={<Navigate to="/Home" />} />
         </Routes>
       </div>
-      {curTab === "Auth" || curTab === "Password Reset" ? null : <Footer />}
-      {curTab === "Auth" || curTab === "Password Reset" ? null : <ScrollToTop />}
+      {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <Footer />}
+      {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <ScrollToTop />}
     </>
   );
 }
