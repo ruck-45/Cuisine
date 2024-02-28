@@ -16,7 +16,9 @@ const Robinhood = () => {
         <Image src="https://digitalelo.online/wp-content/uploads/2024/02/Robinhood-logo-300x169.png" />
         <h1 className="font-bold text-4xl md:text-5xl">Hello!</h1>
         <p className="font-bold text-3xl">How Can We Help ?</p>
-        <p className="font-bold text-3xl mt-[3rem] md:mt-0">Contact Us Today +1 (855) 574-6610</p>
+        <p className="font-bold text-3xl mt-[3rem] md:mt-0">
+          Contact Us Today <br /> +1 (855) 574-6610
+        </p>
         <div className="flex flex-col lg:flex-row gap-[2rem]">
           <Image
             src="https://digitalelo.online/wp-content/uploads/2024/02/robinhood-1024x583.png"
