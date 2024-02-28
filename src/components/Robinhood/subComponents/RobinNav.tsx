@@ -29,7 +29,7 @@ const RobinNav = () => {
         isBordered
         shouldHideOnScroll
       >
-        <NavbarContent className="hidden lg:flex " justify="end">
+        <NavbarContent className="flex " justify="end">
           <NavbarItem>
             <Link
               to="/Home"
