@@ -35,7 +35,7 @@ const RobinNav = () => {
         <NavbarContent className="hidden lg:flex " justify="end">
           <NavbarItem>
             <Link
-              to="/Home"
+              to="/"
               className={
                 curTab === "Home" ? "stateActive navActive flex flex-col px-[1rem]" : "stateNotActive px-[1rem]"
               }
