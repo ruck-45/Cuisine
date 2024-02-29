@@ -72,9 +72,9 @@ function App() {
       <div style={{ backgroundImage: background }} className={className}>
         {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <NavBar />}
         <Routes>
-          {/* <Route path="/" element={<Robinhood />} /> */}
-          <Route path="/" element={<Navigate to="/Home" />} />
-          <Route path="/Home" element={<Home />} />
+           <Route path="/" element={<Robinhood />} /> 
+          {/* <Route path="/" element={<Navigate to="/Home" />} /> */}
+          { /*<Route path="/Home" element={<Home />} /> */}
           <Route path="/About" element={<About />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Recipes" element={<Recipes />} />
@@ -82,7 +82,7 @@ function App() {
           <Route path="/OurStory" element={<Story />} />
           <Route path="/Sustain" element={<Sustain />} />
           <Route path="/landing" element={<Landing />} />
-          <Route path="*" element={<Navigate to="/Home" />} />
+          {/* <Route path="*" element={<Navigate to="/Home" />} /> */}
         </Routes>
       </div>
       {curTab === "Auth" || curTab === "Password Reset" || curTab === "Robinhood" ? null : <Footer />}
